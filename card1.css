@@ -77,7 +77,7 @@ background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)) ,url('images
   color: white;
 }
 .cardB{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('images/city2.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('images/city.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
