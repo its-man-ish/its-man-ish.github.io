@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<title>MANISH</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<link rel="stylesheet" type="text/css" href="card1.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+ 
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+
+</head>
+
+
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">MANISH</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-light w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+
+
+
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="images/profile.jpeg" class="w3-circle w3-margin-right" style="width:60px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>Hello, this is <strong>MANISH </strong></span><br>
+      <a href="https://www.facebook.com/kevin.granger.50951/" class="w3-bar-item w3-button"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/Manishk619" class="w3-bar-item w3-button"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/manish-kumar-2587bb1aa/" class="w3-bar-item w3-button"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+  <br>
+  
+  
+  <div class="w3-bar-block">
+
+    
+    <p class="w3-bar-item w3-blue">FRONT END DEWELOPER</p>
+
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <p class="w3-bar-item  w3-padding ">PROJECTS</p>
+
+    <a href="index.html" class="w3-bar-item w3-button w3-padding">COVID-19: TRACKER</a>
+    
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <div class="w3-row-padding bg-white w2-margin-bottom">
+
+  <div class="card2">
+   
+      <div class="text-center mt-1 ">
+        <hr>
+      <h2 >C<i class="fas fa-virus "></i>VID-19</h2>
+      <h5 style="color: red">LIVE TRACKER</h5>
+      </div>
+  </div>       
+  </div>
+         <div class="card">
+<div class="cardA w3-row-padding bg-white w3-margin-bottom">
+
+
+  <!-- SEARCH BOX ------------------------------------->
+
+
+            <br>
+                <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            
+                                         
+                                   <input class="form-control form-control-lg form-control-borderless" type="text"  placeholder="Enter City " name="" id="name"> <button class="button btn btn-lg btn-success m-1" type="button">Search</button>
+                                         
+                        </div>
+                        
+                </div>
+
+
+<!----------------------------------------------------->
+
+<hr>
+    <div class="w3-quarter">
+      
+      <div class="w3-container  w3-padding-16 m-1">
+        <div class="w3-left"><i class="fa fa-users w3-xxlarge"></i></div>
+        <div class="w3-right">
+          <h3 id="cases">00</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Total Cases</h4>
+      </div>
+    
+    </div>
+
+    <div class="w3-quarter">
+      
+      <div class="w3-container w3-padding-16 m-1">
+        <div class="w3-left"><i class="fas fa-radiation w3-xxlarge"></i></div>
+        <div class="w3-right">
+          <h3 id="active">00</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Active</h4>
+      
+    </div>
+    </div>
+    
+    <div class="w3-quarter">
+      
+      <div class="w3-container w3-padding-16 m-1">
+        <div class="w3-left"><i class="fas fa-heart w3-xxlarge"></i></div>
+        <div class="w3-right">
+          <h3 id="recovered">00</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Recovered</h4>
+     
+    </div>
+  </div>
+
+    <div class="w3-quarter">
+      
+      <div class="w3-container w3-padding-16 m-1">
+        <div class="w3-left"><i class="fas fa-skull-crossbones w3-xxlarge"></i></div>
+        <div class="w3-right">
+          <h3 id="death">00</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Deaths</h4>
+      
+    </div>
+    </div>
+  
+  
+        
+</div>
+</div>
+<hr>
+
+<div class="card w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+
+       <div class=" w3-twothird">
+        
+        
+
+     <div>
+
+ <h5 class="text-center w3-text-light-grey">OVERALL STATS </h5>
+      
+      <div class="row mt-5 text-center w3-text-white">
+
+        <div class="col-3 ">
+          <div><p>Confirmed</p> </div>
+
+          <p id="Confirmed"></p>
+        </div>
+
+        <div class="col-3 ">
+         <div><p>Active</p> </div>
+          <p id="Active"></p>
+        </div>
+
+        <div class="col-3 ">
+          <div><p>Recovered</p> </div>
+          <p id="Recovered"></p>
+        </div>
+
+        <div class="col-3">
+          <div><p>Death</p> </div>
+          <p id="Death"></p>
+        </div>
+     </div>   
+          
+
+          <canvas id="myChart" style="width: 400px, height: 400px;"  class="d-flex justify-content-center"></canvas>
+          
+      </div>
+    </div>
+
+
+
+      
+      <div class="w3-third">
+       
+    <hr>
+        
+
+        
+      <img src="images/map.png" alt="map" style="width:100%;">
+    <hr>  
+      
+        
+      </div>
+      </div>
+
+
+
+       
+   
+
+   <div style="color: white;">
+        <h4>Last Update </h4>
+        <p id="demo" ></p>
+</div>
+   <script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+      
+ </div>
+
+
+</div>
+</div>
+
+     
+
+
+<div class="card3 w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+     <h3 class="text-center"><b>WORLD STATS</b> </h3>
+    <div class="text-center"  style="color: red"><b>UPDATE IN 24 HOURS</b></div>
+
+      <div>
+        <div class="error"></div>
+        <div class="info"></div>
+        <div class="contry mb-4 text-center">
+          <select   name="countries" id="countries">
+            <option value="all">Countries</option>
+          </select>
+        </div>
+        <div class="country-stats text-center "></div>
+      </div>
+       
+   </div> 
+
+  <footer class="w3-container w3-padding-16 w3-light-grey text-center">
+    <h2><a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdyUUpS6CHWy0SbDewLrqz9Rt6JHahjpG8goIXcDPktYktQYQ/viewform?usp=sf_link" role="button" id="next">FEEDBACK</a></h2>
+  </footer>
+        
+  
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+var overlayBg = document.getElementById("myOverlay");
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
+  
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" ></script>
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+
+
+
+<script src="scripts/script.js"></script>
+<script src="scripts/state.js"></script>
+<script src="scripts/index.js" defer></script>
