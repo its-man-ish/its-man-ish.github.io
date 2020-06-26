@@ -17,7 +17,7 @@ $(document).ready(function() {
         var active=[]
 
         $.each(data.statewise,function(id,obj){
-        	states.push(obj.statecode)
+        	states.push(obj.state)
         	confirmed.push(obj.confirmed)
         	recovered.push(obj.recovered)
         	deaths.push(obj.deaths)
@@ -48,39 +48,57 @@ $(document).ready(function() {
 				labels: states,
 				datasets: [
 
-				{   
+				{  
+				 label: 'Cases',
+				data: confirmed,
+				fill : false,
+				borderColor : '#FFF',
+				backgroundColor: '#FFF',
+				borderWidth : 1
 					
-					label: "Confirmed",
-					data: confirmed,
-					backgroundColor: "#f1c40f",
-					minBarLength:100  // minimum bar lenth
 				},
 
 				{
-					label: "Recovered",
-					data: recovered,
-					backgroundColor: "#2ecc71",
-					minBarLength:100  // minimum bar lenth
+
+					label: 'Recovered',
+				data: recovered,
+				fill : false,
+				borderColor : '#009688',
+				backgroundColor: '#009688',
+				borderWidth : 1
+			
 				},
 
 				{
-					label: "Deceased",
-					data: deaths,
-					backgroundColor: "tomato",
-					minBarLength:100  // minimum bar lenth
+
+					label: 'Deaths',
+				data: deaths,
+				fill : false,
+				borderColor : '#f44336',
+				backgroundColor: '#f44336',
+				borderWidth : 1
+					
 				},
 
 
 				{
 					label: "Active",
 					data: active,
+					fill:false,
 					backgroundColor: "blue",
-					minBarLength:100  // minimum bar lenth
+					borderColor:"blue",
+					borderWidth:1
 				}
 
 				]
 			},
-			options:{}
+			options:{
+
+				responsive : true,
+			maintainAspectRatio : true
+				
+			
+			}
 
 
 		})

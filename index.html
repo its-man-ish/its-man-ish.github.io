@@ -55,7 +55,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-bar-block">
 
     
-    <p class="w3-bar-item w3-blue">FRONT END DEVELOPER</p>
+    <p class="w3-bar-item w3-blue">FRONT END DEWELOPER</p>
 
     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
     <p class="w3-bar-item  w3-padding ">PROJECTS</p>
@@ -164,20 +164,85 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </div>
 <hr>
 
-<div class="card w3-panel">
+
+<div class="card mb-0">
+<div class="cardB w3-row-padding bg-white w3-margin-bottom">
+
+<h5 class="text-center w3-text-light-grey mt-3"><b>OVERALL STATS</b><br>India</h5>
+
+
+<div class="w3-quarter">
+      
+      <div class="w3-container  w3-padding-16 m-1">
+        <div class="w3-left"><h4>Total Cases</h4></div>
+        <div class="w3-right">
+          <h4 id="Confirmed"></h4>
+        </div>
+        <div class="w3-clear"></div>
+        
+      </div>
+    
+    </div>
+
+    <div class="w3-quarter">
+      
+      <div class="w3-container  w3-padding-16 m-1">
+        <div class="w3-left"><h4>Active Cases</h4></div>
+        <div class="w3-right">
+           <h4 id="Active"></h4>
+        </div>
+        <div class="w3-clear"></div>
+        
+      </div>
+    
+    </div>
+
+    <div class="w3-quarter">
+      
+      <div class="w3-container  w3-padding-16 m-1">
+        <div class="w3-left"><h4>Recovered Cases</h4></div>
+        <div class="w3-right">
+          <h3 id="Recovered"></h3>
+        </div>
+        <div class="w3-clear"></div>
+        
+      </div>
+    
+    </div>
+
+    <div class="w3-quarter">
+      
+      <div class="w3-container  w3-padding-16 m-1">
+        <div class="w3-left"><h4>Total Deaths</h4></div>
+        <div class="w3-right">
+          <h3 id="Death"></h3>
+        </div>
+        <div class="w3-clear"></div>
+        
+      </div>
+    
+    </div>
+        
+</div>
+</div>
+
+
+
+
+<div class="card w3-panel mt-0">
     <div class="w3-row-padding" style="margin:0 -16px">
 
        <div class=" w3-twothird">
-        
-        
+         <h5 class="text-center w3-text-light-grey mt-3"><b>OVERALL STATS</b><br>STATEWISE</h5>
 
      <div>
-
- <h5 class="text-center w3-text-light-grey">OVERALL STATS </h5>
       
       <div class="row mt-5 text-center w3-text-white">
 
-        <div class="col-3 ">
+
+          <canvas id="myChart" style="width: 400px, height: 400px;"  class="d-flex justify-content-center"></canvas>
+
+    <!--    <div class="col-3 ">
           <div><p>Confirmed</p> </div>
 
           <p id="Confirmed"></p>
@@ -196,11 +261,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <div class="col-3">
           <div><p>Death</p> </div>
           <p id="Death"></p>
-        </div>
+        </div>   -->
      </div>   
           
 
-          <canvas id="myChart" style="width: 400px, height: 400px;"  class="d-flex justify-content-center"></canvas>
           
       </div>
     </div>
@@ -209,11 +273,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
       
       <div class="w3-third">
+        <hr>
        
-    <hr>
-        
-
-        
+    <br>
       <img src="images/map.png" alt="map" style="width:100%;">
     <hr>  
       
@@ -248,8 +310,6 @@ document.getElementById("demo").innerHTML = d;
 <div class="card3 w3-panel">
     <div class="w3-row-padding" style="margin:0 -16px">
      <h3 class="text-center"><b>WORLD STATS</b> </h3>
-    <div class="text-center"  style="color: red"><b>UPDATE IN 24 HOURS</b></div>
-
       <div>
         <div class="error"></div>
         <div class="info"></div>
@@ -262,12 +322,15 @@ document.getElementById("demo").innerHTML = d;
       </div>
        
    </div> 
+ </div>
 
   <footer class="w3-container w3-padding-16 w3-light-grey text-center">
     <h2><a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdyUUpS6CHWy0SbDewLrqz9Rt6JHahjpG8goIXcDPktYktQYQ/viewform?usp=sf_link" role="button" id="next">FEEDBACK</a></h2>
   </footer>
+
+ </div> 
         
-  
+</body>
 <script>
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
@@ -292,15 +355,8 @@ function w3_close() {
 </body>
 </html>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
-  
-</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" ></script>
-<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
-
-
-
 <script src="scripts/script.js"></script>
 <script src="scripts/state.js"></script>
 <script src="scripts/index.js" defer></script>
