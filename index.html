@@ -55,7 +55,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-bar-block">
 
     
-    <p class="w3-bar-item w3-blue">FRONT END DEWELOPER</p>
+    <p class="w3-bar-item w3-blue">Front-end developer</p>
 
     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
     <p class="w3-bar-item  w3-padding ">PROJECTS</p>
@@ -79,7 +79,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
    
       <div class="text-center mt-1 ">
         <hr>
+        <div class="logo">
       <h2 >C<i class="fas fa-virus "></i>VID-19</h2>
+        </div>
       <h5 style="color: red">LIVE TRACKER</h5>
       </div>
   </div>       
@@ -165,7 +167,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <hr>
 
 
-<div class="card mb-0">
+<div>
 <div class="cardB w3-row-padding bg-white w3-margin-bottom">
 
 <h5 class="text-center w3-text-light-grey mt-3"><b>OVERALL STATS</b><br>India</h5>
@@ -187,7 +189,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-quarter">
       
       <div class="w3-container  w3-padding-16 m-1">
-        <div class="w3-left"><h4>Active Cases</h4></div>
+        <div class="w3-left"><h4>Active</h4></div>
         <div class="w3-right">
            <h4 id="Active"></h4>
         </div>
@@ -213,7 +215,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-quarter">
       
       <div class="w3-container  w3-padding-16 m-1">
-        <div class="w3-left"><h4>Total Deaths</h4></div>
+        <div class="w3-left"><h4>Deaths</h4></div>
         <div class="w3-right">
           <h3 id="Death"></h3>
         </div>
@@ -241,7 +243,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 
           <canvas id="myChart" style="width: 400px, height: 400px;"  class="d-flex justify-content-center"></canvas>
-
+        <div style="color: lightgrey" class=" text-center">
+        Each dot represnts a state,
+        <i>click on a dot to get the information</i>.
+      </div>     
+     
     <!--    <div class="col-3 ">
           <div><p>Confirmed</p> </div>
 
@@ -278,7 +284,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <br>
       <img src="images/map.png" alt="map" style="width:100%;">
     <hr>  
-      
+
+       
         
       </div>
       </div>
