@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>MANISH</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<link rel="stylesheet" type="text/css" href="card1.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="jumbotron" style="height: 13vh;">
+  <h2 class="text-center">COVID-19 TRACKER </h2>
+</div>
+
+<div class="container">
+<div class="row ">
+<div class="col-sm">
+    <div class="container  cardA text-light">
+       <h3 class="text-center">DISTRICT WISE</h3>
+<!-- SEARCH BOX ------------------------------------->
+
+
+<br>
+<div class="row justify-content-center">
+<div class="col-12 col-md-10 col-lg-8">        
+         <input class="form-control form-control-lg form-control-borderless" type="text"  placeholder="Enter City " name="" id="name"> <button class="button btn btn-lg btn-success m-1" type="button">Search</button>                     
+</div>    
+</div>
+
+
+<!----------------------------------------------------->
+
+
+
+        <div class="row p-2">
+          <div class="col-8 "><h6> <img src="images/icons/users.png" alt="totalcases" height="45px"> Total</h6></div>
+          <div class="col-4"><h6 id="cases">00</h6></div>
+        </div>
+        <div class="row p-2">
+          <div class="col-8"><h6>  <img src="images/icons/infected.png" alt="infectedcases" height="45px">Active</h6></div>
+          <div class="col-4"><h6 id="active">00</h6></div>
+        </div>
+        <div class="row p-2">
+          <div class="col-8"><h6> <img src="images/icons/recovered.png" alt="recovered" height="45px">Recovered</h6></div>
+          <div class="col-4"><h6 id="recovered">00</h6></div>
+        </div>
+        <div class="row p-2">
+          <div class="col-8"><h6> <img src="images/icons/deaths.png" alt="totalcases" height="45px">Deaths</h6></div>
+          <div class="col-4"><h6 id="death">00</h6></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="col-sm">
+  <div class="container cardA text-light">
+      <h3 class="text-center">INDIA</h3>
+      
+      <br>
+      <hr>
+       <div class="row p-2">
+         <div class="col-8 "><h6> <img src="images/icons/users.png" alt="totalcases" height="45px"> Total</h6></div>
+         <div class="col-4"><h6 id="Confirmed">00</h6></div>
+       </div>
+       <div class="row p-2">
+         <div class="col-8"><h6>  <img src="images/icons/infected.png" alt="infectedcases" height="45px">Active</h6></div>
+         <div class="col-4"><h6 id="Active">00</h6></div>
+       </div>
+       <div class="row p-2">
+         <div class="col-8"><h6> <img src="images/icons/recovered.png" alt="recovered" height="45px">Recovered</h6></div>
+         <div class="col-4"><h6 id="Recovered">00</h6></div>
+       </div>
+       <div class="row p-2">
+         <div class="col-8"><h6> <img src="images/icons/deaths.png" alt="totalcases" height="45px">Deaths</h6></div>
+         <div class="col-4"><h6 id="Death">00</h6></div>
+       </div>
+       <br>
+       <hr>
+       <br>
+   </div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="card3 w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+     <h2 class="text-center"><b>WORLD</b> </h2>
+      <div>
+        <div class="error"></div>
+        <div class="info"></div>
+        <div class="contry mb-4 text-center">
+          <select   name="countries" id="countries">
+            <option value="all">Countries</option>
+          </select>
+        </div>
+        <div class="country-stats text-center "></div>
+      </div>
+       
+   </div> 
+ </div>
+
+</div>
+ </div> 
+</div>
+</body>
+
+
+</html>
+
+
+
+<script src="scripts/state.js"></script>
+<script src="scripts/index.js" defer></script>
+<script src="scripts/script.js"></script>
+
